@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f3ebe4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+}
+.container .left .des-img {
+  height: 70vh;
+  width: 50%;
+  background-color: gold;
+  overflow: clip;
+  margin-top: 5px;
+  height: 60vh;
+  width: 21vw;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.mob-img {
+  display: none;
+}
+.container .right {
+  height: 70vh;
+  width: 30vw;
+  background-color: aqua;
+  height: 60vh;
+  width: 21vw;
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  gap: 20px;
+}
+.container .right .bold {
+  letter-spacing: 5px;
+  font-family: "Hanken Grotesk", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2vw;
+  color: gray;
+}
+.container .right h1 {
+  width: 15vw;
+  font-size: 2.5vw;
+}
+.container .right .diff-font {
+  width: 15vw;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: gray;
+  font-size: 1vw;
+}
+.container .right .price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.container .right .price span {
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  cursor: pointer;
+  color: hsl(158, 36%, 37%);
+}
+.container .right .price p {
+  font-size: 1vw;
+  text-decoration: line-through;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+.container .right .btn {
+  padding: 6px 50px;
+  font-size: 1.2vw;
+  font-family: "Hanken Grotesk", sans-serif;
+  background: hsl(158, 36%, 37%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  gap: 10px;
+}
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+.btn i {
+  color: #fff;
+}
+
+@media only screen and (max-width: 2561px) {
+  .container .left .des-img {
+    height: 70vh;
+  }
+  .container .right {
+    height: 70vh;
+  }
+  .container .right .bold {
+    font-size: 1.3vw;
+  }
+  .container .right h1 {
+    width: 15vw;
+    font-size: 2vw;
+  }
+  .container .right .price span {
+    font-size: 2vw;
+  }
+  .container .right .btn {
+    height: 9vh;
+    font-size: 1.2vw;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .container .left .des-img {
+    height: 50vh;
+    margin-top: 4px;
+  }
+  .container .right {
+    height: 50vh;
+  }
+  .container .right .price span {
+    font-size: 2vw;
+  }
+  .container .right .btn {
+    height: 7vh;
+    font-size: 1.2vw;
+  }
+}
+@media (max-width: 1151px) {
+  .container .right .btn {
+    height: 6vh;
+    font-size: 1.1vw;
+  }
+  .container .left .des-img {
+    height: 38vh;
+  }
+  .container .right {
+    height: 38vh;
+  }
+}
+@media (max-width: 1157px) {
+  .container .left .des-img {
+    height: 38vh;
+  }
+  .container .right {
+    height: 38vh;
+  }
+  .container .right .btn {
+    height: 6vh;
+    font-size: 1.1vw;
+  }
+}
+@media (max-width: 1082px) {
+  .container .right .btn {
+    height: 6vh;
+    font-size: 1vw;
+  }
+}
+@media (max-width: 1025px) {
+  .container .right {
+    gap: 1rem;
+  }
+  .container .left .des-img {
+    height: 50vh;
+    width: 30vw;
+  }
+  .container .right {
+    height: 50vh;
+    width: 30vw;
+  }
+  .container .right .bold {
+    font-size: 1.6vw;
+  }
+  .container .right h1 {
+    width: 20vw;
+    font-size: 3.5vw;
+  }
+  .container .right .diff-font {
+    width: 23vw;
+    font-size: 1.5vw;
+  }
+  .container .right .price span {
+    font-size: 3vw;
+  }
+  .container .right .price p {
+    font-size: 1.3vw;
+  }
+  .container .right .btn {
+    height: 7vh;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 1021px) {
+  .container .left .des-img {
+    height: 43vh;
+  }
+  .container .right {
+    height: 43vh;
+  }
+}
+
+@media (max-width: 809px) {
+  .container .left .des-img {
+    height: 40vh;
+  }
+  .container .right {
+    height: 40vh;
+  }
+  .container .right .btn {
+    height: 6vh;
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .mob-img {
+    display: block;
+    height: 35vh;
+    width: 70vw;
+  }
+  .container .left .des-img {
+    height: 40vh;
+    display: none;
+  }
+  .container .right {
+    width: 70vw;
+    height: 60vh;
+  }
+  .container .right .bold {
+    font-size: 4vw;
+    font-weight: 600;
+  }
+  .container .right h1 {
+    width: 60vw;
+    font-size: 3.5rem;
+  }
+  .container .right .diff-font {
+    width: 65vw;
+    font-size: 3vw;
+  }
+  .container .right .price span {
+    font-size: 3rem;
+  }
+  .container .right .price p {
+    font-size: 3.2vw;
+  }
+  .container .right .btn {
+    height: 6vh;
+    width: 66vw;
+    font-size: 3vw;
+  }
+}
+@media (max-width: 376px) {
+  .container .left .mob-img {
+    height: 30vh;
+    width: 95vw;
+  }
+  .container .right {
+    height: 30vh;
+    width: 95vw;
+  }
+  .container .right {
+    height: 45vh;
+  }
+  .container .right h1 {
+    width: 70vw;
+    font-size: 10vw;
+  }
+  .container .right .diff-font {
+    width: 75vw;
+    font-size: 4vw;
+  }
+  .container .right .diff-font {
+    width: 80vw;
+    font-size: 4.3vw;
+  }
+  .container .right .price span {
+    font-size: 10vw;
+  }
+  .container .right .price p {
+    font-size: 5vw;
+  }
+  .container .right .btn {
+    height: 6vh;
+    font-size: 5vw;
+  }
+}
